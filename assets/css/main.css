@@ -339,8 +339,25 @@ main:focus { outline: none; }
   .destinations { grid-template-columns: 1fr 1fr; gap: 14px 12px; }
   .destination { gap: 8px; }
   .destination .display--card { font-size: 26px; }
+  .destination__photo { aspect-ratio: 1 / 1; }
   .destination__photo.photo--placeholder { padding: 12px; font-size: 12px; }
 
-  .portrait { width: 100%; }
+  /* Smaller type and photos so each section fits a phone screen */
+  .hero__fly { font-size: 96px; }
+  .hero__upside-down { font-size: 52px; }
+  .hero__where { margin-top: 10px; font-size: 32px; }
+  .display--xl, .display--lg { font-size: 52px; }
+  .display--md { font-size: 48px; }
+  .display--huge { font-size: 72px; }
+  .script--lg { font-size: 32px; }
+  .script--md { font-size: 28px; }
+  .band__list { font-size: 20px; gap: 6px 8px; }
+  .hero__photo-main { width: 78%; max-height: 380px; }
+  .hero__photo-detail { width: 40%; height: 120px; }
+  .collage--community, .collage--beyond { max-width: 340px; }
+  .collage__offset { margin-top: 48px; }
+  .portrait { width: 72%; max-width: 280px; }
+  .chip { padding: 8px 14px; font-size: 12px; }
+  .join__card { padding: 48px 20px; }
   .join__card { border-radius: 28px; }
 }
