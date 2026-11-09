@@ -1,0 +1,14 @@
+{%- assign s = include.t.community -%}
+<section id="concept" class="section section--pink" aria-labelledby="community-title">
+  <div class="container split">
+    <div class="stack">
+      <h2 id="community-title" class="display display--lg lowercase">{{ s.title }}</h2>
+      <p class="script script--lg">{{ s.subtitle }}</p>
+      <p class="measure">{{ s.body }}</p>
+    </div>
+    <div class="collage collage--community">
+      {% include photo.html name="studio" alt=s.photos.studio class="collage__a shape-arch tint-pink" %}
+      {% include photo.html name="group" alt=s.photos.group class="collage__b shape-circle tint-green" %}
+    </div>
+  </div>
+</section>

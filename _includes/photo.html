@@ -1,0 +1,13 @@
+{%- comment -%}
+  Renders assets/images/photos/<name>.jpg. While the file is missing, renders a
+  coloured placeholder with the same shape, so photos can be added later
+  without touching the markup.
+  Params: name, alt, class.
+{%- endcomment -%}
+{%- assign photo_path = "/assets/images/photos/" | append: include.name | append: ".jpg" -%}
+{%- assign photo_file = site.static_files | where: "path", photo_path | first -%}
+{%- if photo_file -%}
+<img class="photo {{ include.class }}" src="{{ photo_path | relative_url }}" alt="{{ include.alt }}" loading="lazy" decoding="async">
+{%- else -%}
+<div class="photo photo--placeholder {{ include.class }}" role="img" aria-label="{{ include.alt }}">{{ include.alt }}</div>
+{%- endif -%}

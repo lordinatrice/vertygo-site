@@ -1,0 +1,8 @@
+{%- assign s = include.t.join -%}
+<section id="join" class="join" aria-labelledby="join-title">
+  <div class="join__card">
+    <h2 id="join-title" class="display display--huge">{{ s.title }}</h2>
+    <p class="script script--lg">{{ s.subtitle }}</p>
+    <a class="button button--plum" href="{{ site.survey_url }}">{{ s.cta }}</a>
+  </div>
+</section>

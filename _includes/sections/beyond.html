@@ -1,0 +1,21 @@
+{%- assign s = include.t.beyond -%}
+<section class="section section--blue" aria-labelledby="beyond-title">
+  <div class="container split split--beyond">
+    <div class="collage collage--beyond">
+      {% include photo.html name="swim" alt=s.photos.swim class="shape-arch-soft tint-blue" %}
+      {% include photo.html name="market" alt=s.photos.market class="collage__offset shape-circle tint-blue" %}
+    </div>
+    <div class="stack">
+      <h2 id="beyond-title" class="display display--md lowercase">{{ s.title }}</h2>
+      <p class="script script--lg">{{ s.subtitle }}</p>
+      <dl class="rule-list">
+        {%- for item in s.items %}
+        <div class="rule-list__row">
+          <dt>{{ item.title }}</dt>
+          <dd>{{ item.body }}</dd>
+        </div>
+        {%- endfor %}
+      </dl>
+    </div>
+  </div>
+</section>

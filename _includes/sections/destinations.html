@@ -1,0 +1,18 @@
+{%- assign s = include.t.destinations -%}
+<section class="section section--cream" aria-labelledby="destinations-title">
+  <div class="container stack stack--lg">
+    <div class="section-head">
+      <h2 id="destinations-title" class="display display--xl">{{ s.title }}</h2>
+      <p class="script script--md">{{ s.subtitle }}</p>
+    </div>
+    <ul class="destinations" role="list">
+      {%- for place in s.places %}
+      {%- capture photo_class %}destination__photo shape-{{ place.shape }} tint-{{ place.tint }}{% endcapture %}
+      <li class="destination">
+        {% include photo.html name=place.key alt=place.alt class=photo_class %}
+        <span class="display display--card">{{ place.name }}</span>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>

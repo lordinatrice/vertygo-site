@@ -1,0 +1,24 @@
+{%- assign s = include.t.hero -%}
+<section class="section hero" aria-labelledby="hero-title">
+  <div class="container hero__grid">
+    <div class="hero__copy">
+      <p class="eyebrow eyebrow--blue">{{ s.eyebrow }}</p>
+      <h1 id="hero-title" class="hero__title">
+        <span class="hero__fly">{{ s.fly }}</span>
+        <span class="hero__upside-down">{{ s.upside_down }}</span>
+        <span class="hero__where">{{ s.where }}</span>
+      </h1>
+      <p class="hero__lead">{{ s.lead }}</p>
+      <div class="hero__actions">
+        <a class="button button--green" href="{{ site.survey_url }}">{{ s.cta }}</a>
+        <span class="mono-note">{{ s.cta_note }}</span>
+      </div>
+    </div>
+
+    <div class="hero__visual">
+      {% include photo.html name="hero" alt=s.photos.hero class="hero__photo-main shape-arch" %}
+      {% include photo.html name="hands" alt=s.photos.hands class="hero__photo-detail" %}
+      {% include sections/hero-badge.html t=include.t %}
+    </div>
+  </div>
+</section>

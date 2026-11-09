@@ -1,0 +1,13 @@
+title: "Vertygo Aerial"
+lang: en
+url: ""        # e.g. https://vertygo.com once the domain is set
+baseurl: ""    # e.g. /vertygo-site while served from username.github.io/vertygo-site
+
+survey_url: "https://tally.so/r/q5azj7"
+instagram_url: "https://www.instagram.com/vertygo.aerial/"
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

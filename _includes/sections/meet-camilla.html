@@ -1,0 +1,18 @@
+{%- assign s = include.t.meet_camilla -%}
+<section class="section" aria-labelledby="camilla-title">
+  <div class="container split">
+    {%- comment -%} Portrait shape: swap shape-arch for shape-circle to get the round version. {%- endcomment %}
+    {% include photo.html name="camilla" alt=s.photo class="portrait shape-arch" %}
+    <div class="stack stack--sm">
+      <h2 id="camilla-title" class="display display--xl text-pink">{{ s.title }}</h2>
+      <p class="script script--md text-green">{{ s.subtitle }}</p>
+      <p class="eyebrow eyebrow--blue">{{ s.role }}</p>
+      <ul class="chips" role="list">
+        {%- for badge in s.badges %}
+        <li class="chip chip--{{ badge.color }}">{{ badge.label }}</li>
+        {%- endfor %}
+      </ul>
+      <p>{{ s.bio }}</p>
+    </div>
+  </div>
+</section>

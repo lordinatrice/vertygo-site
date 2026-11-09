@@ -1,0 +1,122 @@
+# Every piece of copy on the site. To add a language, copy this file
+# (for example to fr.yml), translate the values, and add a page with `lang: fr`.
+
+site:
+  title: "Vertygo Aerial · small-group aerial retreats"
+  description: "A week of aerial arts with expert teachers, in small groups, between the studio and wide-open landscapes."
+  skip_link: "Skip to content"
+
+header:
+  home: "Vertygo Aerial, back to top"
+  cta: "Join the list"
+
+footer:
+  instagram: "Instagram @vertygo.aerial"
+
+hero:
+  eyebrow: "Aerial retreats · small groups · all levels"
+  fly: "fly"
+  upside_down: "upside down"
+  where: "somewhere wild."
+  lead: "A week of aerial arts with expert teachers, in small groups, between the studio and wide-open landscapes."
+  cta: "Shape your dream retreat"
+  cta_note: "2-min survey · early access"
+  badge: "ALL LEVELS · IN NATURE · ALL LEVELS · IN NATURE · "
+  photos:
+    hero: "An aerialist on the hoop, with a landscape behind"
+    hands: "Close-up of hands gripping the hoop"
+
+values:
+  label: "Our values"
+  words: [ "free", "bold", "skilled", "together" ]
+
+community:
+  title: "Come for<br>the aerials,"
+  subtitle: "stay for the community."
+  body: "Expert teachers, a small group, and real progress whatever your level. Beginners are carried by the group, experienced flyers are pushed further. Everyone leaves stronger, and with new friends."
+  photos:
+    studio: "A hoop session in the studio"
+    group: "The group outdoors"
+
+day:
+  title: "a day<br>up there"
+  subtitle: "fly in the morning, wander after."
+  moments:
+    - time: "Morning"
+      title: "aerial · 1h30"
+      body: "Technique and flow on your main apparatus."
+      theme: plum
+    - time: "Midday"
+      title: "discovery · 1h30"
+      body: "Contortion, straps, hammock or yoga with a guest teacher."
+      theme: green
+    - time: "Afternoon"
+      title: "out there"
+      body: "Hikes, river swims, markets, or open practice."
+      theme: blue
+    - time: "Evening"
+      title: "together"
+      body: "Shared dinners, sunsets and stories."
+      theme: pink
+
+beyond:
+  title: "Beyond<br>the studio"
+  subtitle: "a retreat is also a journey."
+  items:
+    - title: "Nature escapes"
+      body: "hikes, rivers, swims"
+    - title: "Local flavours"
+      body: "markets, cooking, good tables"
+    - title: "Culture"
+      body: "old towns, temples, local dance"
+    - title: "Your photo shoot"
+      body: "studio and nature"
+  photos:
+    swim: "A swim in a river"
+    market: "A local market"
+
+destinations:
+  title: "where<br>next?"
+  subtitle: "first edition in 2027.<br>you help us choose."
+  places:
+    - key: india
+      name: "india"
+      alt: "A landscape in India"
+      shape: arch
+      tint: pink
+    - key: georgia
+      name: "georgia"
+      alt: "A landscape in Georgia"
+      shape: rounded
+      tint: green
+    - key: thailand
+      name: "thailand"
+      alt: "A landscape in Thailand"
+      shape: arch
+      tint: blue
+    - key: france
+      name: "france"
+      alt: "A landscape in France"
+      shape: rounded
+      tint: rose
+
+meet_camilla:
+  title: "meet Camilla"
+  subtitle: "your host, in the air and on the road."
+  role: "Camilla, founder"
+  photo: "Camilla upside down in the hoop under a sunset lamp"
+  badges:
+    - label: "200h YTT-certified in Rishikesh"
+      color: pink
+    - label: "Hammock TTC-certified"
+      color: blue
+    - label: "Contortion lover"
+      color: cream
+    - label: "Completely hoop-obsessed"
+      color: green
+  bio: "Vertygo brings together what she loves: great teachers, small groups and beautiful places in nature. She hand-picks every venue and every guest teacher, and never misses a sunset shoot."
+
+join:
+  title: "let’s fly"
+  subtitle: "help us shape the first retreat."
+  cta: "Take the 2-minute survey"

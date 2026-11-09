@@ -1,0 +1,30 @@
+{%- assign lang = page.lang | default: site.lang -%}
+{%- assign t = site.data.locales[lang] -%}
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title | default: t.site.title }}</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="{{ t.site.description }}">
+    <meta name="theme-color" content="#3A1024">
+    <meta property="og:title" content="{{ t.site.title }}">
+    <meta property="og:description" content="{{ t.site.description }}">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="{{ '/assets/images/icon.svg' | relative_url }}" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@400;500&family=Manrope:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">{{ t.site.skip_link }}</a>
+    {% include header.html t=t %}
+    <main id="main" tabindex="-1">
+      {{ content }}
+    </main>
+    {% include footer.html t=t %}
+  </body>
+</html>
