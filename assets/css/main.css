@@ -352,12 +352,44 @@ main:focus { outline: none; }
   .script--lg { font-size: 32px; }
   .script--md { font-size: 28px; }
   .band__list { font-size: 20px; gap: 6px 8px; }
-  .hero__photo-main { width: 78%; max-height: 380px; }
+  .hero__photo-main { width: 72%; max-height: 320px; }
   .hero__photo-detail { width: 40%; height: 120px; }
   .collage--community, .collage--beyond { max-width: 340px; }
   .collage__offset { margin-top: 48px; }
   .portrait { width: 72%; max-width: 280px; }
   .chip { padding: 8px 14px; font-size: 12px; }
-  .join__card { padding: 48px 20px; }
+  .join__card { padding: 40px 20px; gap: 14px; }
+
+  /* Overall rhythm: body text, spacing and cards a notch smaller */
+  :root { --section-y: 44px; --gutter: 18px; }
+  body { font-size: 15px; line-height: 1.55; }
+  .split, .split--beyond { gap: 32px; }
+  .stack { gap: 14px; }
+  .stack--lg { gap: 24px; }
+  .eyebrow { font-size: 11px; letter-spacing: 0.12em; }
+  .hero__copy .eyebrow { margin-bottom: 14px; }
+  .hero__fly { font-size: 84px; }
+  .hero__upside-down { font-size: 44px; }
+  .hero__where { font-size: 28px; }
+  .hero__actions { margin-top: 18px; }
+  .hero__grid { gap: 28px; }
+  .button { min-height: 44px; padding: 12px 22px; font-size: 13px; }
+  .button--small { min-height: 40px; padding: 8px 14px; font-size: 11px; }
+  .display--xl, .display--lg { font-size: 44px; }
+  .display--md { font-size: 42px; }
+  .display--huge { font-size: 60px; }
+  .script--lg { font-size: 27px; }
+  .script--md { font-size: 24px; }
+  .day__card { gap: 12px; padding: 18px 20px; border-radius: 20px; }
+  .day__card .display--card { font-size: 26px; }
+  .day__time { font-size: 11px; }
+  .rule-list__row { padding: 10px 0; }
+  .collage--community, .collage--beyond { max-width: 300px; }
+  .destination .display--card { font-size: 22px; }
+  .portrait { max-width: 240px; }
+  .chip { padding: 6px 12px; font-size: 11px; }
+  .chips { gap: 8px; }
+  .join__card { border-radius: 24px; }
+  .site-footer { padding: 20px var(--gutter); font-size: 12px; }
   .join__card { border-radius: 28px; }
 }
