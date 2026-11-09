@@ -305,21 +305,42 @@ main:focus { outline: none; }
   text-align: center;
 }
 
-/* Small screens: stack the collages instead of overlapping them */
+/* Small screens (most visitors come from Instagram, on a phone) */
 @media (max-width: 640px) {
+  :root { --section-y: 56px; }
+
+  .site-header { padding-top: 16px; padding-bottom: 16px; }
   .logo { gap: 8px; }
   .logo__symbol { width: 34px; height: 34px; }
   .logo__name { font-size: 24px; }
   .logo__tagline { font-size: 20px; }
   .button--small { padding: 10px 16px; font-size: 12px; }
-  .hero__visual { min-height: 0; display: grid; gap: 14px; }
-  .hero__photo-main, .hero__photo-detail { position: static; width: 100%; }
-  .hero__photo-main { height: auto; aspect-ratio: 4 / 5; }
-  .hero__photo-detail { height: 200px; }
+  .hero__actions .button { width: 100%; justify-content: center; }
+
+  /* Hero: one big arch, the detail photo tucked over its corner */
+  .hero__visual { min-height: 0; padding-bottom: 48px; }
+  .hero__photo-main { position: relative; width: 88%; height: auto; margin-left: auto; aspect-ratio: 4 / 5; }
+  .hero__photo-detail { width: 44%; height: 150px; border: 4px solid var(--plum); }
   .hero__badge { display: none; }
+
   .collage--community { min-height: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; align-items: end; }
   .collage__a, .collage__b { position: static; width: 100%; }
   .collage__offset { margin-top: 60px; }
+
+  /* Day: compact cards */
+  .day { gap: 10px; }
+  .day__card { min-height: 0; gap: 20px; padding: 22px 24px; border-radius: 24px; }
+  .display--card { font-size: 32px; }
+
   .rule-list__row { flex-direction: column; gap: 2px; }
   .rule-list dd { text-align: left; }
+
+  /* Destinations: two by two */
+  .destinations { grid-template-columns: 1fr 1fr; gap: 14px 12px; }
+  .destination { gap: 8px; }
+  .destination .display--card { font-size: 26px; }
+  .destination__photo.photo--placeholder { padding: 12px; font-size: 12px; }
+
+  .portrait { width: 100%; }
+  .join__card { border-radius: 28px; }
 }
