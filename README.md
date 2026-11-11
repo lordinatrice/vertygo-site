@@ -30,8 +30,8 @@ shape with the alt text is shown instead.
 | --- | --- |
 | `hero.jpg` | Hero, big arch (portrait) |
 | `detail.jpg` | Hero, small card |
-| `studio.jpg` | Community, arch (portrait) |
-| `group.jpg` | Community, circle (square) |
+| `studio.jpg` | Community, circle (square) |
+| `group.jpg` | Community, arch (portrait) |
 | `river.jpg` | Beyond the studio, arch (portrait) |
 | `wildlife.jpg` | Beyond the studio, circle (square) |
 | `india.jpg`, `georgia.jpg`, `thailand.jpg`, `france.jpg` | Where next (portrait 3:4) |
