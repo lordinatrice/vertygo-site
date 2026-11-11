@@ -5,6 +5,7 @@ baseurl: ""
 
 survey_url: "https://tally.so/r/q5azj7"
 instagram_url: "https://www.instagram.com/vertygo.aerial/"
+contact_email: "hello@vertygoaerial.com"
 
 exclude:
   - README.md
