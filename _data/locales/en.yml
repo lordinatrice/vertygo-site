@@ -23,8 +23,8 @@ hero:
   cta_note: "2-min survey · early access"
   badge: "ALL LEVELS · IN NATURE · ALL LEVELS · IN NATURE · "
   photos:
-    hero: "An aerialist on the hoop, with a landscape behind"
-    hands: "Close-up of hands gripping the hoop"
+    hero: "An aerialist on the hoop under a pink sunset lamp, her shadow on the wall"
+    detail: "An empty hoop framing a mountain valley"
 
 values:
   label: "Our values"
@@ -35,8 +35,8 @@ community:
   subtitle: "stay for the community."
   body: "Expert teachers, a small group, and real progress whatever your level. Beginners are carried by the group, experienced flyers are pushed further. Everyone leaves stronger, and with new friends."
   photos:
-    studio: "A hoop session in the studio"
-    group: "The group outdoors"
+    studio: "Hoops hanging in a bright aerial studio"
+    group: "A group practising on aerial hammocks outdoors"
 
 day:
   title: "a day<br>up there"
@@ -72,8 +72,8 @@ beyond:
     - title: "Your photo shoot"
       body: "studio and nature"
   photos:
-    swim: "A swim in a river"
-    market: "A local market"
+    river: "A wide river flowing past a hillside town and temples"
+    wildlife: "A grey langur monkey sitting on a ledge"
 
 destinations:
   title: "where<br>next?"
@@ -81,22 +81,22 @@ destinations:
   places:
     - key: india
       name: "india"
-      alt: "A landscape in India"
+      alt: "A busy bridge leading to a painted temple gate in India"
       shape: arch
       tint: pink
     - key: georgia
       name: "georgia"
-      alt: "A landscape in Georgia"
+      alt: "Friends looking out through stone arches beside a colourful mosaic in Georgia"
       shape: rounded
       tint: green
     - key: thailand
       name: "thailand"
-      alt: "A landscape in Thailand"
+      alt: "People wading in the sea at sunset in Thailand"
       shape: arch
       tint: blue
     - key: france
       name: "france"
-      alt: "A landscape in France"
+      alt: "Clear water in a rocky cove in France"
       shape: rounded
       tint: rose
 

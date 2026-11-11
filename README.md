@@ -23,21 +23,23 @@ bundle exec jekyll serve      # http://localhost:4000
 
 ## Photos
 
-Drop a JPEG named after its slot into `assets/images/photos/`, and it replaces the
-placeholder automatically. Until then, a coloured shape with the alt text is shown.
+Each slot shows `assets/images/photos/<name>.jpg`. If a file is missing, a coloured
+shape with the alt text is shown instead.
 
 | File | Section |
 | --- | --- |
-| `hero.jpg` | Hero, big arch: on the hoop with a landscape behind (portrait) |
-| `hands.jpg` | Hero, small card: hands on the hoop |
-| `studio.jpg` | Community: a hoop session in the studio (portrait) |
-| `group.jpg` | Community: the group outdoors (square) |
-| `swim.jpg` | Beyond the studio: a swim (portrait) |
-| `market.jpg` | Beyond the studio: a local market (square) |
+| `hero.jpg` | Hero, big arch (portrait) |
+| `detail.jpg` | Hero, small card |
+| `studio.jpg` | Community, arch (portrait) |
+| `group.jpg` | Community, circle (square) |
+| `river.jpg` | Beyond the studio, arch (portrait) |
+| `wildlife.jpg` | Beyond the studio, circle (square) |
 | `india.jpg`, `georgia.jpg`, `thailand.jpg`, `france.jpg` | Where next (portrait 3:4) |
-| `camilla.jpg` | Meet Camilla (portrait 4:5), already in place |
+| `camilla.jpg` | Meet Camilla (portrait 4:5) |
 
-Keep photos around 1600 px on the long side, exported as JPEG at 80% quality.
+Replace a file with the same name to change a photo, and update its alt text in
+`_data/locales/en.yml`. Keep photos around 1400 px on the long side, JPEG at 80% quality, with location
+metadata (EXIF) removed since the repository is public.
 
 The portrait is an arch. For a circle, swap `shape-arch` for `shape-circle` in
 `_includes/sections/meet-camilla.html`.
