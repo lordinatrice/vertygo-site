@@ -1,9 +1,11 @@
 {%- assign s = include.t.values -%}
 <section class="band" aria-label="{{ s.label }}">
-  <ul class="band__list" role="list">
-    {%- for word in s.words %}
-      {% unless forloop.first %}<li class="band__star" aria-hidden="true">✦</li>{% endunless %}
-      <li>{{ word }}</li>
-    {%- endfor %}
-  </ul>
+  <a class="band__link" href="{{ site.survey_url }}" aria-label="{{ s.link_label }}">
+    <ul class="band__list" role="list">
+      {%- for word in s.words %}
+        {% unless forloop.first %}<li class="band__star" aria-hidden="true">✦</li>{% endunless %}
+        <li>{{ word }}</li>
+      {%- endfor %}
+    </ul>
+  </a>
 </section>

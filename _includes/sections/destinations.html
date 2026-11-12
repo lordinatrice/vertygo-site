@@ -9,8 +9,13 @@
       {%- for place in s.places %}
       {%- capture photo_class %}destination__photo shape-{{ place.shape }} tint-{{ place.tint }}{% endcapture %}
       <li class="destination">
-        {% include photo.html name=place.key alt=place.alt class=photo_class %}
-        <span class="display display--card">{{ place.name }}</span>
+        <a class="destination__link" href="{{ site.survey_url }}" aria-label="{{ s.vote_label | replace: '__name__', place.label }}">
+          {% include photo.html name=place.key alt=place.alt class=photo_class %}
+          <span class="destination__name">
+            <span class="display display--card">{{ place.name }}</span>
+            <span class="destination__vote" aria-hidden="true">{{ s.vote }}</span>
+          </span>
+        </a>
       </li>
       {%- endfor %}
     </ul>

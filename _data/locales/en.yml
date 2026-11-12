@@ -28,6 +28,7 @@ hero:
 
 values:
   label: "Our values"
+  link_label: "free, bold, skilled, together: shape your retreat in the 2-minute survey"
   words: [ "free", "bold", "skilled", "together" ]
 
 community:
@@ -78,24 +79,30 @@ beyond:
 destinations:
   title: "where<br>next?"
   subtitle: "first edition in 2027.<br>you help us choose."
+  vote: "vote →"
+  vote_label: "Vote for __name__ in the 2-minute survey"
   places:
     - key: india
       name: "india"
+      label: "India"
       alt: "A busy bridge leading to a painted temple gate in India"
       shape: arch
       tint: pink
     - key: georgia
       name: "georgia"
+      label: "Georgia"
       alt: "Friends looking out through stone arches beside a colourful mosaic in Georgia"
       shape: rounded
       tint: green
     - key: thailand
       name: "thailand"
+      label: "Thailand"
       alt: "People wading in the sea at sunset in Thailand"
       shape: arch
       tint: blue
     - key: france
       name: "france"
+      label: "France"
       alt: "Clear water in a rocky cove in France"
       shape: rounded
       tint: rose
